@@ -1,7 +1,11 @@
 # terraform-aws-iam_instance_profile
-This is a module that makes it easy to create an iam_instance_profile. Built for 0.12
+This module creates an `iam_instance_profile` based on provided allowed actions and resources. The module is built for Terraform version 0.12
 
-Example Usage:
+## Examples
+See also [/examples/default] a complete working example.
+
+
+## Usages
 ```
 module "iam_instance_profile" {
     name = var.name
@@ -12,6 +16,8 @@ module "iam_instance_profile" {
     ]
 }
 
+##
 ```
-outputs:
-the name of the iam_instance_profile: `module.iam_instance_profile.name`
+
+## Outputs:
+The name of the iam_instance_profile: `module.iam_instance_profile.name`
